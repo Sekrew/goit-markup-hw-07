@@ -6,8 +6,8 @@
 
     & .item{
         flex-basis: calc(100% / 3 - $card-set-gap);
-        margin-right: var($card-set-gap);
-        margin-bottom: var($card-set-gap);
+        margin-right: $card-set-gap;
+        margin-bottom: $card-set-gap;
     }
 }
 

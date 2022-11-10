@@ -585,8 +585,8 @@ img {
 .portfolio-table .item {
   -ms-flex-preferred-size: calc(33.3333333333% - 30px);
       flex-basis: calc(33.3333333333% - 30px);
-  margin-right: var(30px);
-  margin-bottom: var(30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .table-img {
