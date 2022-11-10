@@ -1,0 +1,147 @@
+.header- {
+    border: 1px solid $border-color;
+}
+
+.header-container {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    text-align: center;
+    margin-right: 0;
+    height: 80px;
+    align-items: center;
+}
+
+.nav-main {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: $hover-color;
+    text-decoration: none;
+    margin-right: 91px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.text-studio {
+    color: $black;
+}
+
+.foot-studio {
+    color: $default-color;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list .item {
+    margin-left: 50px;
+}
+
+.nav-list .item:first-child {
+    margin-left: 0;
+}
+
+.nav .link {
+    position: relative;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: $domain-text-color;
+
+    transition: color 250ms $cubic;
+
+    &:hover, &:focus{
+        color: $hover-color;
+    }
+
+    &::after{
+    content: '';
+
+    position: absolute;
+    bottom: -32.6px;
+
+    width: 100%;
+    height: 4px;
+    display: block;
+
+    border-radius: 2px;
+    background-color: $hover-color;
+    transform: scale(0);
+
+    transition: transform 250ms $cubic;
+    }
+
+    &:hover::after, &:focus::after{
+        transform: scale(1);
+    }
+}
+
+.active-link {
+    position: relative;
+
+    color: $hover-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    &::after{
+    content: '';
+
+    position: absolute;
+    bottom: -32.6px;
+
+    width: 100%;
+    height: 4px;
+    display: block;
+
+    border-radius: 2px;
+    background-color: $hover-color;
+    }
+}
+
+.down {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+    & .item:not(:first-child){
+        margin-left: 50px;
+    }
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--p-color);
+    text-decoration: none;
+    fill: var(--sgv-icon-color);
+
+    transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+
+    &:hover, &:focus{
+    color: var(--hover-color);
+    fill: var(--hover-color);
+    }
+}
+
+.icon-convert {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon-smartphone {
+    display: inline-block;
+    margin-right: 10px;
+}
