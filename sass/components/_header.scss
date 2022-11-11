@@ -124,15 +124,15 @@
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
-    color: var(--p-color);
+    color: $p-color;
     text-decoration: none;
-    fill: var(--sgv-icon-color);
+    fill: $sgv-icon-color;
 
-    transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+    transition: color 250ms $cubic, fill 250ms $cubic;
 
     &:hover, &:focus{
-    color: var(--hover-color);
-    fill: var(--hover-color);
+    color: $hover-color;
+    fill: $hover-color;
     }
 }
 
