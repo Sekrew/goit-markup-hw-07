@@ -1,21 +1,21 @@
-.portfolio-table {
+.portfolio__table {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * $card-set-gap);
     margin-bottom: calc(-1 * $card-set-gap);
 
-    & .item{
+    & .portfolio-table__item{
         flex-basis: calc(100% / 3 - $card-set-gap);
         margin-right: $card-set-gap;
         margin-bottom: $card-set-gap;
     }
 }
 
-.table-img {
+.portfolio-table__img {
     margin-bottom: 20px;
 }
 
-.portfolio-link {
+.portfolio-table__link {
     text-decoration: none;
     color: $domain-text-color;
     display: block;
@@ -27,12 +27,12 @@
     }
 }
 
-.card-thumb {
+.portfolio-table__card-thumb {
     position: relative;
     overflow: hidden;
 }
 
-.card-overlay {
+.portfolio-table__card-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,12 +45,12 @@
 
     transition: transform 250ms $cubic;
 
-    .portfolio-link:hover &, .portfolio-link:focus &{
+    .portfolio-table__link:hover &, .portfolio-table__link:focus &{
         transform: translate(0);
     }
 }
 
-.overlay-text {
+.portfolio-table__overlay-text {
     padding: 63px 24px;
     font-weight: 400;
     font-size: 18px;
@@ -58,7 +58,7 @@
     color: $default-color;
 }
 
-.card-text {
+.portfolio-table__text-box {
     padding-left: $card-text-lrpad;
     padding-right: $card-text-lrpad;
     padding-bottom: $card-text-btpad;
@@ -67,14 +67,14 @@
     border-top: none;
 }
 
-.portfolio-text {
+.portfolio-table__card-title {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
     margin-bottom: 4px;
 }
 
-.portfolio-p {
+.portfolio-table__card-text {
     font-size: 16px;
     line-height: calc(30 / 16);
     color: $p-color;

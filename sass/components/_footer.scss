@@ -1,4 +1,34 @@
-.footer-adress {
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $background-big;
+
+    & .header-nav__main{
+        margin-right: 0;
+    }
+}
+
+.foot__body {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__studio {
+    color: $default-color;
+}
+
+.footer__address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.footer__contacts-list{
+    & .footer-contacts-list__item:not(:last-child){
+        margin-bottom: 9px;
+    }
+}
+
+.footer__adress {
     font-size: 14px;
     line-height: calc(24 / 14);
     color: $default-color;
@@ -11,7 +41,7 @@
     }
 }
 
-.footer-contacts {
+.footer__contact {
     font-size: 14px;
     line-height: calc(24 / 14);
     color: rgba(255, 255, 255, 0.6);
@@ -24,35 +54,12 @@
     }
 }
 
-.foot {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $background-big;
-}
 
-.foot-div {
-    display: flex;
-    align-items: baseline;
-}
-
-.foot .nav-main {
-    margin-right: 0;
-}
-
-.address {
-    font-style: normal;
-    margin-top: 20px;
-
-    & .item:not(:last-child){
-        margin-bottom: 9px;
-    }
-}
-
-.join-div {
+.footer__join {
     margin-left: 70px;
 }
 
-.join {
+.footer__join-title {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -61,16 +68,16 @@
     margin-bottom: 20px;
 }
 
-.foot-svg {
+.footer__svg-list {
     display: flex;
     justify-content: center;
 
-    & .item:not(:last-child){
+    & .footer-svg-list__item:not(:last-child){
         margin-right: 10px;
     }
 }
 
-.foot-svg-link {
+.footer__svg-link {
     height: 44px;
     width: 44px;
 
@@ -87,17 +94,17 @@
     }
 }
 
-.foot-svg-icon {
+.footer__svg-icon {
     fill: $default-color;
 }
 
-.foot-form-container {
+.footer-form__box {
     margin-left: 93px;
 }
 
 .foot-form-div {}
 
-.form-p {
+.footer-form__title {
     color: $default-color;
     font-weight: 700;
     font-size: 14px;
@@ -107,19 +114,19 @@
     margin-bottom: 20px;
 }
 
-.foot-form {
+.footer__form {
     margin-right: 12px;
     min-width: 358px;
     display: flex;
 }
 
-.field-foot {
+.footer-form__field {
     display: block;
     width: auto;
     margin-right: 12px;
 }
 
-.foot-input {
+.footer-form__input {
     display: block;
     width: 358px;
 
@@ -141,7 +148,7 @@
     }
 }
 
-.foot-submit {
+.footer-form__submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,7 +172,7 @@
     }
 }
 
-.icon-send {
+.footer-form__icon-send {
     margin-left: 10px;
     fill: $default-color;
 }

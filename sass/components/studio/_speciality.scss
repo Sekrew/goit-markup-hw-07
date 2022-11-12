@@ -1,8 +1,8 @@
-.speciality-sec {
+.speciality {
     padding-top: 0;
 }
 
-.speciality {
+.speciality__title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -12,19 +12,19 @@
     margin-bottom: 50px;
 }
 
-.speciality-ul {
+.speciality__list {
     display: flex;
 
-    & .item:not(:nth-child(3n)){
+    & .speciality-list__item:not(:nth-child(3n)){
         margin-right: 30px;
     }
 }
 
-.speciality-card {
+.speciality__card {
     position: relative;
 }
 
-.speciality-card-text {
+.speciality-card__text {
     text-align: center;
     background-color: rgba(47, 48, 58, 0.8);
     padding-top: 27px;

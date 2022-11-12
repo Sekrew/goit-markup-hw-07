@@ -1,9 +1,9 @@
-.features-ul {
+.features__list {
     display: flex;
     margin-right: auto;
     margin-left: auto;
 
-    & .item::before{
+    & .features-list__item::before{
         content: '';
 
         width: 270px;
@@ -13,9 +13,17 @@
         background-color: $button-bgc;
         margin-bottom: 30px;
     }
+
+    & .features-list__item{
+        width: 270px;
+    }
+
+    & .features-list__item:not(:nth-child(4n)) {
+        margin-right: 30px;
+    }
 }
 
-.icon::before {
+.features__icon::before {
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -36,15 +44,7 @@
     background-image: url('../images/space.svg');
 }
 
-.features-ul .item {
-    width: 270px;
-
-    &:not(:nth-child(4n)){
-        margin-right: 30px;
-    }
-}
-
-.features-h {
+.features__title {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -52,7 +52,7 @@
     margin-bottom: 10px;
 }
 
-.features-p {
+.features__text {
     font-size: 14px;
     line-height: calc(21 / 14);
     color: $p-color;

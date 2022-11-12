@@ -1,4 +1,4 @@
-.clients-text {
+.clients__title {
     text-align: center;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -7,23 +7,23 @@
     margin-bottom: 50px;
 }
 
-.clients-ul {
+.clients__list {
     display: flex;
 
-    & .item{
+    & .clients-list__item{
         width: calc((100% - 150px) / 6);
     }
 
-    & .item:not(:last-child){
+    & .clients-list__item:not(:last-child){
         margin-right: 30px;
     }
 }
 
-.companies-div {
+.clients__box {
     height: 92px;
 }
 
-.clients-link {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
